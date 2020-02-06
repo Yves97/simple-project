@@ -5,11 +5,14 @@ import './plugins/bootstrap-vue'
 import App from './App.vue'
 import Announcement from './components/Announcement.vue'
 import Articles from './components/Articles.vue'
-import Members from './components/Members.vue'
+import Contact from './components/Contact.vue';
+// import Members from './components/Members.vue'
+export const eventBus = new Vue()
 
 Vue.component('announcement',Announcement)
 Vue.component('articles',Articles)
-Vue.component('members',Members)
+Vue.component('contact',Contact)
+// Vue.component('members',Members)
 
 Vue.config.productionTip = false
 
